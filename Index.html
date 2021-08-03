@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="photo/aa.jpg" type="image/x-icon">
 		<link rel="stylesheet" href="main2.css">
+		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="themify-icons\themify-icons.css">
 		<title>ARSPER (LHA)</title>
 	</head>
@@ -14,8 +15,9 @@
 			
 			<div id="header">
 				<ul class="nav">
-					<li><a href="#"><i class="ti-home"></i> Home</a></li>
+					<li><a href="#slider"><i class="ti-home"></i> Home</a></li>
 					<li><a href="#band"><i class="ti-user"></i> About</a></li>
+					<li><a href="#photo"><i class="ti-image"></i> Photo</a></li>
 					<li><a href="#tour"><i class="ti-timer"></i> Memories</a></li>
 					<li><a href="#contact"><i class="ti-email"></i> Contact</a></li>
 					<!-- <li>
@@ -41,8 +43,9 @@
 						<i class="ti-close"></i>
 					</label>
 					<ul for="turn-off" class="nav-mobile-list">
-						<li><a href="#"><i class="ti-home"></i> Home</a></li>
+						<li><a href="#slider"><i class="ti-home"></i> Home</a></li>
 						<li><a href="#band"><i class="ti-user"></i> About</a></li>
+						<li><a href="#photo"><i class="ti-image"></i> Photo</a></li>
 						<li><a href="#tour"><i class="ti-timer"></i> Memories</a></li>
 						<li><a href="#contact"><i class="ti-email"></i> Contact</a></li>
 						<!-- <li>
@@ -57,7 +60,7 @@
 				</div>
 			</div>
 
-			<div class="slider">
+			<div id="slider" class="slider">
 				<div class="slider-photo_list">
 					<div class="slider-photo_list-item">
 						<img src="./photo/photo1.jpg" alt="">
@@ -73,7 +76,7 @@
 					</div>
 				</div>
 				<div class="text">
-					<h1 class="text-big">LÊ HOÀNG ANH</h1>
+					<span class="text-big">LÊ HOÀNG ANH</span>
 				</div>
 			</div>
 
@@ -141,50 +144,128 @@
 					<div class="clear"></div>
 				</div>
 
+				<!-- photo -->
+				<div id="photo" class="image_big">
+					<div class="image_big-sunset">
+						<img src="./photo/sunset.jpg" alt="">
+					</div>
+					<div class="image_big_text">
+						<span>MY PHOTOS</span>
+					</div>
+				</div>
+
+				<!-- List photos. -->
+				<div class="list_photo">
+					<div class="list_photo_item">
+						<div class="list_photo_item-img" style="background-image: url(./photo/list1.jpg); height: 290px; background-size: cover; background-repeat: no-repeat;"></div>
+						<div class="list_photo_item-info">
+							<i class="list_photo_item-icon"></i>
+							<span class="list_photo_item-text">HOLA</span>
+							<span class="list_photo_item-text2">11/2020</span>
+						</div>
+					</div>
+					<div class="list_photo_item">
+						<div class="list_photo_item-img" style="background-image: url(./photo/list5.jpg); height: 290px; background-size: cover; background-repeat: no-repeat;"></div>
+						<div class="list_photo_item-info">
+							<i class="list_photo_item-icon"></i>
+							<span class="list_photo_item-text">ROYAL CITY</span>
+							<span class="list_photo_item-text2">11/2020</span>
+						</div>
+					</div>
+					<div class="list_photo_item">
+						<div class="list_photo_item-img" style="background-image: url(./photo/list3.jpg); height: 290px; background-size: cover; background-repeat: no-repeat;"></div>
+						<div class="list_photo_item-info">
+							<i class="list_photo_item-icon"></i>
+							<span class="list_photo_item-text">HOLA</span>
+							<span class="list_photo_item-text2">10/2020</span>
+						</div>
+					</div>
+					<div class="list_photo_item">
+						<div class="list_photo_item-img" style="background-image: url(./photo/list16.jpg); height: 290px; background-size: cover; background-repeat: no-repeat;"></div>
+						<div class="list_photo_item-info">
+							<i class="list_photo_item-icon"></i>
+							<span class="list_photo_item-text">Giao Luu Park</span>
+							<span class="list_photo_item-text2">09/2020</span>
+						</div>
+					</div>
+					<div class="list_photo_item">
+						<div class="list_photo_item-img" style="background-image: url(./photo/list14.jpg); height: 290px; background-size: cover; background-repeat: no-repeat;"></div>
+						<div class="list_photo_item-info">
+							<i class="list_photo_item-icon"></i>
+							<span class="list_photo_item-text">PDP Street</span>
+							<span class="list_photo_item-text2">04/2020</span>
+						</div>
+					</div>
+					<div class="list_photo_item">
+						<div class="list_photo_item-img" style="background-image: url(./photo/list17.jpg); height: 290px; background-size: cover; background-repeat: no-repeat;"></div>
+						<div class="list_photo_item-info">
+							<i class="list_photo_item-icon"></i>
+							<span class="list_photo_item-text">GO HOME</span>
+							<span class="list_photo_item-text2">01/2021</span>
+						</div>
+					</div>
+					<div class="list_photo_item">
+						<div class="list_photo_item-img" style="background-image: url(./photo/list2.jpg); height: 290px; background-size: cover; background-repeat: no-repeat;"></div>
+						<div class="list_photo_item-info">
+							<i class="list_photo_item-icon"></i>
+							<span class="list_photo_item-text">Trang Tien Plaza</span>
+							<span class="list_photo_item-text2">12/2020</span>
+						</div>
+					</div>
+					<div class="list_photo_item">
+						<div class="list_photo_item-img" style="background-image: url(./photo/list4.jpg); height: 290px; background-size: cover; background-repeat: no-repeat;"></div>
+						<div class="list_photo_item-info">
+							<i class="list_photo_item-icon"></i>
+							<span class="list_photo_item-text">ROYAL CITY</span>
+							<span class="list_photo_item-text2">11/2020</span>
+						</div>
+					</div>
+				</div>
+
 				<!-- TOUR DATES -->
 				<div id="tour" class="tour-list">
 					<div class="content-one">
-						<h2 class="content-section">TOUR DATES</h2>
-						<p class="section-heading">Remember to book your ticket!</p>
+						<h2 class="content-section">MEMORIES</h2>
+						<p class="section-heading">
+							Learn to enjoy minute of your life. 
+							Be happy now.
+						</p>
+						<p class="section-heading">
+							Don’t wait for something outside of yourself to make you happy in the future.
+						</p>
 						<br>
-						<ul class="ticket">
-							<li class="ticket-list">September <span class="sold-out">Sold out</span></li>
-							<li class="ticket-list">October <span class="sold-out">Sold out</span></li>
-							<li class="ticket-list">November <span class="number-ticket">3</span></li>
-						</ul>
 						<div class="local-list">
 							<div class="tour-local">
-								<img src="./photo/newyork.jpg" alt="New York" class="local-img">
+								<div class="local-img" style="background-image: url(./photo/list11.jpg); height: 245px; background-size: cover; background-repeat: no-repeat;"></div>
 								<div class="tour-item">
-									<h3 class="tour-name">New York</h3>
-									<p class="tour-time">Fri 27 Nov 2016</p>
-									<p class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-									<a href="#" class="buy-tickets">Buy Tickets</a>
+									<h3 class="tour-name">Le Loi High School</h3>
+									<p class="tour-time">Mon 29 Apr 2019</p>
+									<p class="desc">Le Loi High School - where I missed the best things and the best friend for me.</p>
+									<a href="#" class="buy-tickets">More...</a>
 									
 								</div>
 							</div>
 							<div class="tour-local">
-								<img src="./photo/paris.jpg" alt="Paris" class="local-img">
+								<div class="local-img" style="background-image: url(./photo/list18.jpg); height: 245px; background-size: cover; background-repeat: no-repeat;"></div>
 								<div class="tour-item">
-									<h3 class="tour-name">Paris</h3>
-									<p class="tour-time">Sat 28 Nov 2016</p>
-									<p class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-									<a href="#" class="buy-tickets">Buy Tickets</a>
+									<h3 class="tour-name">FPT Software</h3>
+									<p class="tour-time">Sat 27 Jul 2019</p>
+									<p class="desc">I went to one of the biggest tech companies in Vietnam when I was a freshman.</p>
+									<a href="#" class="buy-tickets">More...</a>
 								</div>
 							</div>
 							<div class="tour-local">
-								<img src="./photo/sanfran.jpg" alt="San Francisco" class="local-img">
+								<div class="local-img" style="background-image: url(./photo/list9.jpg); height: 245px; background-size: cover; background-repeat: no-repeat;"></div>
 								<div class="tour-item">
-									<h3 class="tour-name">San Francisco</h3>
-									<p class="tour-time">Sun 29 Nov 2016</p>
-									<p class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-									<a href="#" class="buy-tickets">Buy Tickets</a>
+									<h3 class="tour-name">HOLA</h3>
+									<p class="tour-time">Sat 14 Nov 2020</p>
+									<p class="desc">I gave up on my dream of becoming a soldier. And I tried that as a sophomore.</p>
+									<a href="#" class="buy-tickets">More...</a>
 								</div>
 							</div>
 							<div class="clear"></div>
 						</div>
 					</div>
-					
 				</div>
 
 				<!-- contact -->
@@ -193,34 +274,47 @@
 					<p class="section-heading">If you want to chat, message on facebook or zalo. Please email me if you want to work with me.</p>
 					<p class="section-heading">Please text me before calling me.</p>
 					<div class="row contact-content">
-						<div class="col col-half contact-infor">
-							<p><i class="ti-location-pin"></i>Nam Tu Liem, Ha Noi</p>
-							<p><i class="ti-mobile"></i>Phone: 0829004889</p>
-							<p><i class="ti-email"></i>Email: anhlhgch190172@fpt.edu.vn</p>
+						<div class="contact-content_img">
+							<img src="./photo/toi1.jpg" alt="">
 						</div>
-						<div class="col col-half contact-form">
-							<form action="">
-								<div class="row">
-									<div class="col col-half">
-										<input type="text" placeholder="Name" required class="form-control">
+						<div class="contact-content_info">
+							<div class="contact-infor">
+								<p><i class="ti-location-pin"></i>Nam Tu Liem, Ha Noi</p>
+								<p><i class="ti-mobile"></i>Phone: 0829004889</p>
+								<p><i class="ti-email"></i>Email: anhlhgch190172@fpt.edu.vn</p>
+							</div>
+							<div class="contact-form">
+								<form action="">
+									<div class="row">
+										<div class="col col-half">
+											<input type="text" placeholder="Name" required class="form-control">
+										</div>
+										<div class="col col-half">
+											<input type="email" placeholder="Email" required class="form-control">
+										</div>
 									</div>
-									<div class="col col-half">
-										<input type="email" placeholder="Email" required class="form-control">
+									<div class="row mt-8">
+										<div class="col col-full">
+											<input type="text" placeholder="Message" required class="form-control">
+										</div>
 									</div>
-								</div>
-								<div class="row mt-8">
-									<div class="col col-full">
-										<input type="text" placeholder="Message" required class="form-control">
-									</div>
-								</div>
-								<input type="submit" class="col-submit mt-16" value="SEND">
-							</form>
+									<input type="submit" class="col-submit mt-16" value="SEND">
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="footer">
+				<div class="back_to_top">
+					<a href="#slider">
+						<span class="bold" style="font-size: 15px; color: #e9e7e7;">
+							<i class="ti-arrow-up" style="color: #e9e7e7"></i>
+							Back to the top
+						</span>
+					</a>
+				</div>
 				<div class="logo">
 					<a href="https://www.facebook.com/arsper21/" target="_blank"><i class="ti-facebook"></i></a>
 					<a href="https://www.instagram.com/dev.arsper/" target="_blank"><i class="ti-instagram"></i></a>
@@ -228,7 +322,7 @@
 					<a href=mailto:anhlhgch190172@fpt.edu.vn?subject target="_blank"><i class="ti-email"></i></a>
 					<a href="https://www.youtube.com/channel/UCdD5i41Hz8bEDnEwHBPVOSQ" target="_blank"><i class="ti-youtube"></i></a>
 				</div>
-				<p class="pre">Developed by<span class="bold" style="font-style: italic; text-decoration: underline;">Hoang Anh</span></p>
+				<p class="pre">Developed by <span class="bold" style="font-style: italic; text-decoration: underline;">Hoang Anh</span></p>
 			</div>
 		</div>
 	</body>

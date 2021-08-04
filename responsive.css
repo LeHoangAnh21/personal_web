@@ -1,0 +1,211 @@
+/* PC */
+@media (min-width: 1024px) {
+	
+}
+
+/* IPAD PRO */
+@media (max-width: 1367px) {
+	.slider-photo_list-item img{
+		height: 220px;
+	}
+
+	.text{
+		top: 15%;
+	}
+
+	.list_photo{
+		margin: 30px 55px 80px;
+	}
+}
+
+/* Mobile and Tablet */
+@media (max-width: 1023px){
+	.slider-photo_list-item img{
+		width: 50%;
+		float: left;
+	}
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+	.text{
+		top: 30%;
+	}
+
+	.slider{
+		height: 440px;
+	}
+
+	.list_photo_item{
+		margin: 30px 22px 0 23px;
+	}
+
+	.contact-content{
+		margin: 35px;
+	}
+
+	.contact-content_img{
+		width: 87%;
+	}
+}
+
+/* Mobile */
+@media (max-width: 739px){
+	.slider-photo_list-item img{
+		height: 80%;
+	}
+
+	.text{
+		top: 28%;
+	}
+
+	.text span{
+		font-size: 20px;
+	}
+
+	.member{
+		display: block;
+	}
+
+	.member-list{
+		text-align: center;
+		width: 100%;
+	}
+
+	.member-list .name{
+		width: 100%;
+	}
+
+	.member-list img{
+		text-align: center;
+		width: 80%;
+	}
+
+	.member-list_info:first-child{
+		width: 40%;
+		margin-left: 20px;
+		margin-right: 0px;
+	}
+
+	.member-list_info:last-child{
+		width: 60%;
+		margin-left: 20px;
+		margin-right: 0px;
+	}
+
+	.section-subheading{
+		margin: 0 5px;
+	}
+
+	.list_photo_item{
+		width: 100%;
+	}
+
+	.list_photo{
+		margin: 30px 20px 80px;
+	}
+
+	.tour-local{
+		width: 100%;
+	}
+
+	.contact-content{
+		display: block;
+	}
+
+	.contact-content_img{
+		text-align: center;
+		width: 100%;
+	}
+
+	.contact-content_img img{
+		width: 70%;
+	}
+
+	.contact-content_info{
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	.contact-infor{
+		margin-left: 20px;
+	}
+
+	.contact-form{
+		margin: 35px 20px 0;
+	}
+
+	.nav-mobile{
+		width: 250px;
+	}
+}
+
+/* Small tablet */
+@media (min-width: 500px) and (max-width: 650px){
+	.slider{
+		height: 370px;
+	}
+
+	.text{
+		top: 35%;
+	}
+	.text span{
+		font-size: 25px;
+	}
+
+	.member-list_info:first-child,
+	.member-list_info:last-child{
+		margin-left: 50px;
+	}
+
+	.list_photo_item{
+		height: 450px;
+	}
+
+	.list_photo_item-img{
+		height: 100%;
+	}
+
+	.tour-local{
+		height: 600px;
+	}
+
+	.local-img{
+		height: 70%;
+	}
+
+	.nav-mobile{
+		width: 400px;
+	}
+}
+
+/* Iphone 5  */
+@media (max-width: 330px){
+	.slider{
+		height: 215px;
+	}
+
+	.text{
+		top: 30%;
+	}
+
+	.text span{
+		font-size: 15px;
+	}
+
+	.member-list_info:first-child{
+		margin-left: 0;
+	}
+
+	.member-list_info:last-child{
+		margin-left: 0;
+	}
+
+	.list_photo{
+		margin: 30px 20px 80px;
+	}
+
+	.nav-mobile{
+		width: 200px;
+	}
+}

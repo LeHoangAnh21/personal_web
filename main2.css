@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body::-webkit-scrollbar{
+	display: none;
+}
+
 html{
 	font-family: Arial, Helvetica, sans-serif;
 	scroll-behavior: smooth;
@@ -87,15 +91,15 @@ html{
 }
 
 .slider{
-	/* margin-top: 46px;
-	padding-top: 50%; */
-	/* background: url('photo/chicago.jpg') top center / cover no-repeat; */
 	height: 220px;
+}
+
+.slider-photo_list{
+	height: 100%;
 }
 
 .slider-photo_list-item{
 	margin-top: 46px;
-	
 }
 
 .slider-photo_list-item:hover img{
@@ -104,17 +108,9 @@ html{
 	opacity: 0.7;
 }
 
-@keyframes fadeInn{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0.7;
-    }
-}
-
 .slider-photo_list-item img{
 	width: 25%;
+	height: 100%;
 	float: left;
 }
 
@@ -181,13 +177,15 @@ html{
 	display: flex;
 }
 
+.member-list_info-item{
+	display: flex;
+}
+
 .bold{
 	font-weight: 700;
 }
 
-.content-one .member-list{
-	/* float: left; */
-	/* padding-top: 48px; */
+.member-list{
 	text-align: center;
 	width: 33.3333%;
 }
@@ -209,9 +207,9 @@ html{
 	border-radius: 5px;
 }
 
+/* TOUR DATES */
 .tour-list{
 	background-color: rgb(163, 162, 162);
-	color: white;
 }
 
 .local-list{
@@ -223,6 +221,12 @@ html{
 	float: left;
 	padding: 8px;
 	width: calc(100% / 3);
+}
+
+.local-img{
+	height: 245px; 
+	background-size: cover; 
+	background-repeat: no-repeat;
 }
 
 .local-img{
@@ -340,6 +344,12 @@ html{
 	height: 290px;
 	position: relative;
 	transition: 0.25s linear;
+}
+
+.list_photo_item-img{
+	height: 290px; 
+	background-size: cover; 
+	background-repeat: no-repeat;
 }
 
 .list_photo_item:hover{
@@ -548,7 +558,7 @@ html{
 	right: 0;
 	bottom: 0;
 	transform: translateX(100%);
-	transition: all linear 1s;
+	transition: all linear 0.3s;
 	opacity: 0;
 }
 

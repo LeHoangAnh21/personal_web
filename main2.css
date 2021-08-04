@@ -77,10 +77,10 @@ html{
 	color: #fff;
 }
 
-#header .ti-menu,
-#header .search-icon{
+#header .ti-menu{
 	line-height: 46px;
 	padding: 0 21px;
+	font-size: 1.5rem;
 }
 
 .menu{

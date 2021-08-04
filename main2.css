@@ -330,6 +330,14 @@ html{
 	border-radius: 5px;
 }
 
+.aaa{
+	font-size: 0.7rem; 
+	font-style: italic; 
+	text-align: center; 
+	width: 100%; 
+	display: none;
+}
+
 /* List photo */
 .list_photo{
 	display: flex;

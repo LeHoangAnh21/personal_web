@@ -1,6 +1,16 @@
 /* PC */
-@media (min-width: 1024px) {
-	
+@media (min-width: 1700px) {
+	.text{
+		top: 25%;
+	}
+
+	.slider{
+		height: 320px;
+	}
+
+	.list_photo_item{
+		width: 18.5%;
+	}
 }
 
 /* IPAD PRO */
@@ -23,6 +33,10 @@
 	.slider-photo_list-item img{
 		width: 50%;
 		float: left;
+	}
+
+	.aaa{
+		display: block;
 	}
 }
 

@@ -378,8 +378,6 @@ html{
 	box-sizing: border-box;
 }
 
-
-
 .list_photo_item:hover:before{
 	opacity: 0.6;
 	top: -10px;
@@ -399,7 +397,6 @@ html{
 	opacity: 0;
 	transition: 0.25s linear;
 	box-sizing: border-box;
-	
 }
 
 .list_photo_item:hover::after{

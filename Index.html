@@ -218,11 +218,11 @@
 						</div>
 					</div>
 					<div class="list_photo_item">
-						<div class="list_photo_item-img" style="background-image: url(./photo/list4.jpg)"></div>
+						<div class="list_photo_item-img" style="background-image: url(./photo/list31.jpg)"></div>
 						<div class="list_photo_item-info">
 							<i class="list_photo_item-icon"></i>
-							<span class="list_photo_item-text">ROYAL CITY</span>
-							<span class="list_photo_item-text2">11/2020</span>
+							<span class="list_photo_item-text">Greenwich</span>
+							<span class="list_photo_item-text2">04/2021</span>
 						</div>
 					</div>
 				</div>
@@ -246,28 +246,490 @@
 									<h3 class="tour-name">Le Loi High School</h3>
 									<p class="tour-time">Mon 29 Apr 2019</p>
 									<p class="desc">Le Loi High School - where I missed the best things and the best friend for me.</p>
-									<a href="#" class="buy-tickets">More...</a>
-									
+									<button class="buy-tickets js-more">More...</button>
 								</div>
+								<div class="modal js-modal">
+									<div class="modal_container js-modal_container">
+										<div class="modal_image">
+											<div class="modal_image-item" style="background-image: url(./photo/list20.jpg)"></div>
+											<div class="modal_image-item" style="background-image: url(./photo/list21.jpg)"></div>
+											<div class="modal_image-item" style="background-image: url(./photo/list22.jpg)"></div>
+											<div class="modal_image-item" style="background-image: url(./photo/list19.jpg)"></div>
+										</div>
+						
+										<div class="modal_body">
+											<div class="modal_body-header">
+												<h2>High school is my regret.</h2>
+											</div>
+											<div class="modal_body-container">
+												<span style="padding-left: 2em; text-indent:-2em;">
+													The time in high school was when I felt most comfortable. 
+													But now, I feel regret for that comfort. 
+													I missed a lot of things in high school. 
+													I didn't study English hard, even though English is one of my three main subjects. 
+													I was determined to become a soldier. 
+													It wasn't until the middle of my senior year that I realized I was wrong. 
+													Then I chose information technology. 
+													If I had embraced it and learned it from the beginning, I would have been able to do more in college. 
+													And most of all, I missed someone, someone special to me.
+												</span>
+												<br><br>
+												<span style="padding-left: 2em; text-indent:-2em;">
+													Khoảng thời gian học cấp 3 là lúc tôi cảm thấy thoải mái nhất. 
+													Nhưng hiện tại, tôi cảm thấy tiếc nuối vì sự thoải mái đó. 
+													Tôi đã bỏ lỡ rất nhiều thứ ở trường trung học. 
+													Tôi đã không học tiếng Anh chăm chỉ, mặc dù tiếng Anh là một trong ba môn học chính của tôi. 
+													Tôi đã quyết tâm trở thành một người lính. 
+													Mãi đến giữa năm cuối cấp, tôi mới nhận ra mình đã sai. 
+													Khi đó tôi chọn công nghệ thông tin. 
+													Nếu tôi nắm lấy nó và học nó ngay từ đầu, tôi đã có thể làm được nhiều việc hơn ở trường đại học. 
+													Và hơn hết, tôi đã bỏ lỡ một một người, một người đặc biệt với tôi.
+												</span>
+											</div>
+						
+											<div class="modal_close js-modal-close">
+												<i class="ti-close"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<script>
+									const buyBtns = document.querySelectorAll('.js-more');
+									const modal = document.querySelector('.js-modal');
+									const modalContainer = document.querySelector('.js-modal_container');
+									const closeBtn = document.querySelector('.js-modal-close');
+						
+									function showFormInfo(){
+										modal.classList.add('open');
+									}
+						
+									function closeFormInfo(){
+										modal.classList.remove('open');
+									}
+						
+									for(const buyBtn of buyBtns){
+										buyBtn.addEventListener('click', showFormInfo);
+									}
+						
+									closeBtn.addEventListener('click', closeFormInfo);
+						
+									modal.addEventListener('click', closeFormInfo);
+						
+									modalContainer.addEventListener('click', function (event) {
+										event.stopPropagation();
+									})
+								</script>
 							</div>
+
 							<div class="tour-local">
 								<div class="local-img" style="background-image: url(./photo/list18.jpg)"></div>
 								<div class="tour-item">
 									<h3 class="tour-name">FPT Software</h3>
 									<p class="tour-time">Sat 27 Jul 2019</p>
 									<p class="desc">I went to one of the biggest tech companies in Vietnam when I was a freshman.</p>
-									<a href="#" class="buy-tickets">More...</a>
+									<button class="buy-tickets js-more1">More...</button>
 								</div>
+								<div class="modal js-modal1">
+									<div class="modal_container js-modal_container1">
+										<div class="modal_image">
+											<div class="modal_image-item1" style="background-image: url(./photo/list18.jpg)"></div>
+										</div>
+						
+										<div class="modal_body">
+											<div class="modal_body-header">
+												<h2>Visit FPT software. It was my first company visit when I entered college.</h2>
+											</div>
+											<div class="modal_body-container">
+												<span style="padding-left: 2em; text-indent:-2em;">
+													At that time, I didn't even remember all of my classmates' names. 
+													FPT SW is clearly a big company. 
+													I think it is also the dream of many people. 
+													At that time, I just started to learn about information technology. 
+													Visiting FPT SW is a great experience. 
+													And I knew what I needed to do and where was my destination.
+												</span>
+												<br><br>
+												<span style="padding-left: 2em; text-indent:-2em;">
+													Khi đó, tôi còn chưa nhớ hết tên của bạn cùng lớp. 
+													FPT SW rõ ràng là một công ty lớn. 
+													Tôi nghĩ nó cũng là ước mơ của nhiều người. 
+													Khi đó, tôi mới bắt đầu tìm hiểu về công nghệ thông tin. 
+													Được tham quan FPT SW là một trải nghiệm tuyệt vời. 
+													Và tôi đã biết mình cần phải làm gì và đâu sẽ là đích đến của mình.
+												</span>
+											</div>
+						
+											<div class="modal_close js-modal-close1">
+												<i class="ti-close"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<script>
+									const buyBtns1 = document.querySelectorAll('.js-more1');
+									const modal1 = document.querySelector('.js-modal1');
+									const modalContainer1 = document.querySelector('.js-modal_container1');
+									const closeBtn1 = document.querySelector('.js-modal-close1');
+						
+									function showFormInfo(){
+										modal1.classList.add('open');
+									}
+						
+									function closeFormInfo(){
+										modal1.classList.remove('open');
+									}
+						
+									for(const buyBtn of buyBtns1){
+										buyBtn.addEventListener('click', showFormInfo);
+									}
+						
+									closeBtn1.addEventListener('click', closeFormInfo);
+						
+									modal1.addEventListener('click', closeFormInfo);
+						
+									modalContainer1.addEventListener('click', function (event) {
+										event.stopPropagation();
+									})
+								</script>
 							</div>
+
 							<div class="tour-local">
 								<div class="local-img" style="background-image: url(./photo/list9.jpg)"></div>
 								<div class="tour-item">
 									<h3 class="tour-name">HOLA</h3>
 									<p class="tour-time">Sat 14 Nov 2020</p>
 									<p class="desc">I gave up on my dream of becoming a soldier. And I tried that as a sophomore.</p>
-									<a href="#" class="buy-tickets">More...</a>
+									<button class="buy-tickets js-more2">More...</button>
 								</div>
+								<div class="modal js-modal2">
+									<div class="modal_container js-modal_container2">
+										<div class="modal_image">
+											<div class="modal_image-item3" style="background-image: url(./photo/list1.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list9.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list10.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list8.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list12.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list25.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list26.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list27.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list28.jpeg)"></div>
+										</div>
+						
+										<div class="modal_body">
+											<div class="modal_body-header">
+												<h2>I tried becoming a soldier when I was a sophomore.</h2>
+											</div>
+											<div class="modal_body-container">
+												<span style="padding-left: 2em; text-indent:-2em;">
+													Wow! It was obviously a great experience as a college student. 
+													As I said, becoming a soldier is my dream. 
+													I love traveling. 
+													And I don't think the military would be the right choice. 
+													While in Hola, I lived with my classmates. 
+													The new day starts at 5:30 a.m. and ends at 9:30 p.m. 
+													Discipline is always enhanced. It took me a week to get used to it. 
+													But after 24 days in Hola, I have changed a lot. More positive. 
+													It was clearly a rewarding experience.
+												</span>
+												<br><br>
+												<span style="padding-left: 2em; text-indent:-2em;">
+													Wow! Đó rõ ràng là một trải nghiệm tuyệt vời khi tôi là một sinh viên đại học. 
+													Như tôi đã nói, trở thành một người lính là mơ ước của tôi. 
+													Tôi thích sự ngao du. Và tôi nghĩ quân đội sẽ không phải là lựa chọn phù hợp. 
+													Khi ở Hola, tôi sống cùng những người bạn cùng lớp. 
+													Ngày mới bắt đầu lúc 5 rưỡi sáng và kết thúc lúc 9 rưỡi tối. 
+													Sự kỷ luật luôn được nâng cao. Tôi đã mất 1 tuần để làm quen với nó. 
+													Nhưng sau 24 ngày ở Hola, tôi đã thay đổi nhiều. Tích cực hơn. 
+													Đó rõ ràng là một trải nghiệm bổ ích.
+												</span>
+											</div>
+						
+											<div class="modal_close js-modal-close2">
+												<i class="ti-close"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<script>
+									const buyBtns2 = document.querySelectorAll('.js-more2');
+									const modal2 = document.querySelector('.js-modal2');
+									const modalContainer2 = document.querySelector('.js-modal_container2');
+									const closeBtn2 = document.querySelector('.js-modal-close2');
+						
+									function showFormInfo(){
+										modal2.classList.add('open');
+									}
+						
+									function closeFormInfo(){
+										modal2.classList.remove('open');
+									}
+						
+									for(const buyBtn of buyBtns2){
+										buyBtn.addEventListener('click', showFormInfo);
+									}
+						
+									closeBtn2.addEventListener('click', closeFormInfo);
+						
+									modal2.addEventListener('click', closeFormInfo);
+						
+									modalContainer2.addEventListener('click', function (event) {
+										event.stopPropagation();
+									})
+								</script>
 							</div>
+
+							<div class="tour-local">
+								<div class="local-img" style="background-image: url(./photo/list13.jpg)"></div>
+								<div class="tour-item">
+									<h3 class="tour-name">Marriott Hotel</h3>
+									<p class="tour-time">Sat 30 Jan 2020</p>
+									<p class="desc">A hotel employee. This is not my major. But it gives me the experience.</p>
+									<button class="buy-tickets js-more3">More...</button>
+								</div>
+								<div class="modal js-modal3">
+									<div class="modal_container js-modal_container3">
+										<div class="modal_image">
+											<div class="modal_image-item" style="background-image: url(./photo/list13.jpg)"></div>
+											<div class="modal_image-item" style="background-image: url(./photo/list23.jpg)"></div>
+											<div class="modal_image-item" style="background-image: url(./photo/list24.jpg)"></div>
+											<div class="modal_image-item" style="background-image: url()"></div>
+										</div>
+						
+										<div class="modal_body">
+											<div class="modal_body-header">
+												<h2>I used to be a part-time hotel employee.</h2>
+											</div>
+											<div class="modal_body-container">
+												<span style="padding-left: 2em; text-indent:-2em;">
+													This is also a great experience with a friend. 
+													Although this is not my major, it also helped me understand that making money is not easy. 
+													Every day I went to work in the past, I could make new friends and do new things. 
+													That helped me learn to adapt to every new situation. 
+													I have also encountered many types of managers. 
+													Some people are funny, some people are very difficult. 
+													And I've learned to adapt to that. 
+													I also stopped this job when I was a third year student. 
+													Now, I have to spend all my time on my major.
+												</span>
+												<br><br>
+												<span style="padding-left: 2em; text-indent:-2em;">
+													Đây cũng là một trải nghiệm tuyệt vời cùng một người bạn. 
+													Tuy rằng đây không phải là chuyên ngành của tôi, nhưng nó cũng giúp tôi hiểu được rằng kiếm tiền không hề dễ. 
+													Mỗi ngày đi làm trong quá khứ, tôi có thể làm quen với những người bạn mới và làm những công việc mới. 
+													Điều đó giúp tôi học được cách thích nghi với mọi tình huống mới. Tôi cũng đã gặp nhiều kiểu quản lý. 
+													Có vài người vui tính, có vài người lại rất khó tính. Và tôi đã học được cách thích nghi với điều đó. 
+													Tôi cũng đã dừng công việc này khi là sinh viên năm ba. 
+													Bây giờ, tôi phải dành toàn bộ thời gian cho chuyên ngành của mình.
+												</span>
+											</div>
+						
+											<div class="modal_close js-modal-close3">
+												<i class="ti-close"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<script>
+									const buyBtns3 = document.querySelectorAll('.js-more3');
+									const modal3 = document.querySelector('.js-modal3');
+									const modalContainer3 = document.querySelector('.js-modal_container3');
+									const closeBtn3 = document.querySelector('.js-modal-close3');
+						
+									function showFormInfo(){
+										modal3.classList.add('open');
+									}
+						
+									function closeFormInfo(){
+										modal3.classList.remove('open');
+									}
+						
+									for(const buyBtn of buyBtns3){
+										buyBtn.addEventListener('click', showFormInfo);
+									}
+						
+									closeBtn3.addEventListener('click', closeFormInfo);
+						
+									modal3.addEventListener('click', closeFormInfo);
+						
+									modalContainer3.addEventListener('click', function (event) {
+										event.stopPropagation();
+									})
+								</script>
+							</div>
+
+							<div class="tour-local">
+								<div class="local-img" style="background-image: url(./photo/list31.jpg)"></div>
+								<div class="tour-item">
+									<h3 class="tour-name">University of Greenwich</h3>
+									<p class="tour-time">2019 - 2023</p>
+									<p class="desc">I chose Greenwich. I don't regret that decision. Greenwich is my home.</p>
+									<button class="buy-tickets js-more4">More...</button>
+								</div>
+								<div class="modal js-modal4">
+									<div class="modal_container js-modal_container4">
+										<div class="modal_image">
+											<div class="modal_image-item" style="background-image: url(./photo/list31.jpg)"></div>
+											<div class="modal_image-item" style="background-image: url(./photo/list15.jpg)"></div>
+											<div class="modal_image-item" style="background-image: url(./photo/list29.jpg)"></div>
+											<div class="modal_image-item" style="background-image: url(./photo/list32.jpg)"></div>
+										</div>
+						
+										<div class="modal_body">
+											<div class="modal_body-header">
+												<h3 style="text-transform: uppercase;">I love programming. Greenwich is my home.</h3>
+											</div>
+											<div class="modal_body-container">
+												<span style="padding-left: 2em; text-indent:-2em;">
+													This is a difficult choice. 
+													But I think I was right. 
+													Here, I do not have to study unnecessary subjects. 
+													I learned English with high quality. 
+													I learned soft skills subjects. 
+													I have visited big companies, participated in many talk shows or workshops. 
+													I get to express myself. 
+													After studying here, i have changed a lot. 
+													More mature, more confident, more disciplined, more professional, more dynamic, tougher. 
+													And most of all, Greenwich helped me know what I needed to do and what I really wanted. 
+													Thank you Greenwich. I love Greenwich. Greenwich is my youth.
+												</span>
+												<br><br>
+												<span style="padding-left: 2em; text-indent:-2em;">
+													Đây là một sự lựa chọn khó khăn. 
+													Nhưng tôi nghĩ mình đã đúng. 
+													Tại đây, tôi không phải học những môn học không cần thiết. 
+													Tôi được học tiếng Anh với chất lượng cao. Tôi được học các môn kĩ năng mềm. 
+													Tôi được tham quan các công ty lớn, tham gia nhiều các buổi talk show hoặc workshop. 
+													Tôi được thể hiện bản thân mình. Sau quãng thời gian học tại đây, tôi đã thay đổi rất nhiều. 
+													Trưởng thành hơn, tự tin hơn, kỷ luật hơn, chuyên nghiệp hơn, năng động hơn, cứng rắn hơn. 
+													Và hơn tất cả, Greenwich giúp tôi biết mình cần phải làm gì và mình thực sự mong muốn điều gì. 
+													Cảm ơn Greenwich. Tôi yêu Greenwich. Greenwich là thanh xuân của tôi.
+												</span>
+											</div>
+						
+											<div class="modal_close js-modal-close4">
+												<i class="ti-close"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<script>
+									const buyBtns4 = document.querySelectorAll('.js-more4');
+									const modal4 = document.querySelector('.js-modal4');
+									const modalContainer4 = document.querySelector('.js-modal_container4');
+									const closeBtn4 = document.querySelector('.js-modal-close4');
+						
+									function showFormInfo(){
+										modal4.classList.add('open');
+									}
+						
+									function closeFormInfo(){
+										modal4.classList.remove('open');
+									}
+						
+									for(const buyBtn of buyBtns4){
+										buyBtn.addEventListener('click', showFormInfo);
+									}
+						
+									closeBtn4.addEventListener('click', closeFormInfo);
+						
+									modal4.addEventListener('click', closeFormInfo);
+						
+									modalContainer4.addEventListener('click', function (event) {
+										event.stopPropagation();
+									})
+								</script>
+							</div>
+
+							<div class="tour-local">
+								<div class="local-img" style="background-image: url(./photo/toi1.jpg)"></div>
+								<div class="tour-item">
+									<h3 class="tour-name">Ha Noi</h3>
+									<p class="tour-time">2019 - Present</p>
+									<p class="desc">I was born in Thanh Hoa. I love my hometown. But Hanoi is something special for me.</p>
+									<button class="buy-tickets js-more5">More...</button>
+								</div>
+								<div class="modal js-modal5">
+									<div class="modal_container js-modal_container5">
+										<div class="modal_image">
+											<div class="modal_image-item3" style="background-image: url(./photo/toi1.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list2.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list14.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list16.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list6.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list7.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list33.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list34.jpg)"></div>
+											<div class="modal_image-item3" style="background-image: url(./photo/list35.jpg)"></div>
+										</div>
+						
+										<div class="modal_body">
+											<div class="modal_body-header">
+												<h1>Hanoi is something special for me.</h1>
+											</div>
+											<div class="modal_body-container">
+												<span style="padding-left: 2em; text-indent:-2em;">
+													I was born and raised in a rural area of ​​Thanh Hoa. 
+													I like the atmosphere in the countryside. 
+													It is fresh, pleasant and the space is very comfortable. 
+													When I came to Hanoi in 2019, I really hated Hanoi. 
+													It was crowded and noisy. People are quite careless. 
+													And most of all, I have no family around. 
+													My friends are still on vacation. 
+													I had to familiarize myself with a whole new place, a new school, and new friends. 
+													Hanoi makes me tired. But as a sophomore and a third year student, I changed my view of Hanoi. 
+													I really fell in love with this place. I like West Lake. I love the food here. 
+													I found joy in my work with my college friends. 
+													I love the work I'm doing. I love studying at Circle K. 
+													I love walking the streets of Hanoi on winter evenings. 
+													I met many girls while living here. Have small love affairs with them. 
+													But it ended early. Hope things get better for me ^-^.
+												</span>
+												<br><br>
+												<span style="padding-left: 2em; text-indent:-2em;">
+													
+												</span>
+											</div>
+						
+											<div class="modal_close js-modal-close5">
+												<i class="ti-close"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<script>
+									const buyBtns5 = document.querySelectorAll('.js-more5');
+									const modal5 = document.querySelector('.js-modal5');
+									const modalContainer5 = document.querySelector('.js-modal_container5');
+									const closeBtn5 = document.querySelector('.js-modal-close5');
+						
+									function showFormInfo(){
+										modal5.classList.add('open');
+									}
+						
+									function closeFormInfo(){
+										modal5.classList.remove('open');
+									}
+						
+									for(const buyBtn of buyBtns5){
+										buyBtn.addEventListener('click', showFormInfo);
+									}
+						
+									closeBtn5.addEventListener('click', closeFormInfo);
+						
+									modal5.addEventListener('click', closeFormInfo);
+						
+									modalContainer5.addEventListener('click', function (event) {
+										event.stopPropagation();
+									})
+								</script>
+							</div>
+
 							<div class="clear"></div>
 						</div>
 					</div>

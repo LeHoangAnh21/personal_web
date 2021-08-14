@@ -744,6 +744,16 @@ html{
 	}
 }
 
+/* Mobile */
+@media (max-width: 1023px){
+	.modal.open{
+		display: none;
+	}
+
+	.modal_container{
+		display: none;
+	}
+}
 
 
 

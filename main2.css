@@ -342,6 +342,9 @@ html{
 
 /* List photo */
 .list_photo{
+	display: -webkit-box;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
 	margin: 30px 160px 80px;

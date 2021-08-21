@@ -342,10 +342,8 @@ html{
 
 /* List photo */
 .list_photo{
-	display: -webkit-box;
-  	display: -webkit-flex;
-  	display: -ms-flexbox;
 	display: flex;
+	
 	align-items: center;
 	margin: 30px 160px 80px;
 	flex-wrap: wrap;
@@ -570,6 +568,7 @@ html{
 	transform: translateX(100%);
 	transition: all linear 0.3s;
 	opacity: 0;
+	border-radius: 5px;
 }
 
 .nav-mobile > li > a{
@@ -581,6 +580,7 @@ html{
 .nav-mobile-list > li > a{
 	color: black;
 	text-transform: uppercase;
+	width: 97%;
 }
 
 .nav-mobile-list > li{
